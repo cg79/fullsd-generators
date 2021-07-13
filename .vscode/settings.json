@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/839f67f5-295a-42e1-9352-77088b4ea9e8/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/rungenerator",
+    "appService.deploySubpath": "dist/angular-starter"
+}
