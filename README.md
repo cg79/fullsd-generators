@@ -80,3 +80,6 @@ English Tutorials
 Tutoriels en français
 - Installation - https://www.ganatan.com/tutorials/server-side-rendering-avec-angular-universal
 - Tutoriels Etape par étape - https://www.ganatan.com/tutorials
+
+
+node dist/angular-starter/server/main.js
