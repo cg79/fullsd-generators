@@ -12,6 +12,8 @@ import CustomObserver from './observers/CustomObserver';
 export class AppComponent implements OnInit {
  
   dataModel: MongoDataModel | null = null;
+
+  htmlText ="<p>Your message</p>"
   title = 'conditionMongoQuery';
 
   ngOnInit(): void {

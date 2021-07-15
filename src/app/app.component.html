@@ -432,4 +432,10 @@
       transform="translate(142.69 -634.312)" fill="#eee" />
   </svg>
 
+  <quill-editor #editor formControlName="body"></quill-editor>
+
+  <quill-editor [(ngModel)]="htmlText"
+    placeholder="Enter Text"
+  ></quill-editor>
+
 </div>
