@@ -1,0 +1,15 @@
+
+.expression-input {
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid red; */
+    /* align-items: stretch; */
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.generate:hover {
+    cursor: pointer;
+}

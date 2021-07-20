@@ -12,6 +12,11 @@ const routes: Routes = [
       .then(mod => mod.TutorialModule)
   },
   {
+    path: 'mquery',
+    loadChildren: () => import('./modules/general/mquery/mquery.module')
+      .then(mod => mod.MqueryModule)
+  },
+  {
     path: 'components',
     loadChildren: () => import('./modules/application/example-components/tutorial.module')
       .then(mod => mod.TutorialModule)
