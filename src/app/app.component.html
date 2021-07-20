@@ -363,13 +363,18 @@
   <!-- <pre>{{dataModel.emailBody}}</pre> -->
 
   <div class="card-container">
-    <input type="button" value="Send Message" (click)="sendEmail()" [disabled]="!dataModel.emailBody" />
+    <input type="button" value="Send Message" (click)="sendEmail()" [disabled]="!dataModel.emailBody || dataModel.sendDisabled" />
   </div>
+
+
+  <!-- <i class="fa fa-coffee"></i> -->
 
   <div class="card-container">
 
     <a href="https://www.patreon.com/bePatron?u=58453256" data-patreon-widget-type="become-patron-button"
-      target="_blank">Become a Patron!</a>
+      target="_blank">Become a Patron!
+      <i class="fa fa-coffee" aria-hidden="true"></i>
+    </a>
     <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
   </div>

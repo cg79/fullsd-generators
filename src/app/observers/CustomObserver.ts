@@ -3,12 +3,26 @@
 class CustomObserver {
     constructor() {
 
-        this.overridePush();
+        // this.overridePush();
 
         this.defineWatch();
     }
 
+    overridePush() {
+        if(Array.prototype['overrides']) {
+            return;
+        }
+        Array.prototype['overrides'] = 1;
+        var opush = Array.prototype.push;
+        Array.prototype['push'] = function () {
+            // debugger;
+            console.log(this);
+            return opush.apply(this, arguments);
+        }
+    }
+
     defineWatch() {
+        debugger;
         if (Object.prototype['watch']) {
             return;
         }
@@ -44,20 +58,10 @@ class CustomObserver {
             }
         });
     }
-    overridePush() {
-        if(Array.prototype['overrides']) {
-            return;
-        }
-        Array.prototype['overrides'] = 1;
-        var opush = Array.prototype.push;
-        Array.prototype['push'] = function () {
-            // debugger;
-            console.log(this);
-            return opush.apply(this, arguments);
-        }
-    }
+   
 
     observe(obj, props = [], onAfterChanged) {
+        debugger;
         props.forEach(propName => {
             obj.watch(propName, (v) => {
                 console.log(v);

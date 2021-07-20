@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './modules/general/home/home.component';
+import { MqueryComponent } from './modules/general/mquery/mquery.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, },
+  { path: '', component: MqueryComponent, },
   {
     path: 'template-driven-forms',
     loadChildren: () => import('./modules/application/example-template-driven-forms/tutorial.module')

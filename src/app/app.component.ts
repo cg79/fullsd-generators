@@ -1,17 +1,17 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Inject } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Inject, NgZone } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MongoDataModel } from './models/MongoDataModel';
 import CustomObserver from './observers/CustomObserver';
 import { XhrService } from './xhr/XhrService';
-import { DOCUMENT } from '@angular/common';
+// import { DOCUMENT } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit, AfterViewInit {
  
@@ -33,11 +33,15 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    // CustomObserver.observe(this.dataModel,['emailBody'], () => {
+    //   debugger;
+    //   this.ref.detectChanges();
+    // })
   }
 
   script : any = null;
 
-  constructor() {
+  constructor(private ref: ChangeDetectorRef, private _ngZone: NgZone) {
     // this.ref.detectChanges();
     this.dataModel = new MongoDataModel();
 
@@ -71,7 +75,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     if(!this.dataModel.emailBody) {
       return;
     }
-    debugger;
+   
+    this.dataModel.sendDisabled  = true;
     // const body = JSON.stringify({a:1})
     const body = {content:this.dataModel.emailBody};
 
@@ -80,7 +85,30 @@ export class AppComponent implements OnInit, AfterViewInit {
       console.log(ex);
     })
     .finally(() => {
-      this.dataModel.emailBody = '';
+      debugger;
+      // this._ngZone.run(() => {
+        setTimeout(() => {
+          this.dataModel.emailBody = 'Message sent';
+
+          setTimeout(() => {
+            this.dataModel.emailBody = 'Thank you!';
+
+            setTimeout(() => {
+              this.dataModel.emailBody = '';
+              this.dataModel.sendDisabled  = false;
+            }, 2 * 1000)
+
+            
+
+          }, 2 * 1000)
+
+        }, 1)
+        
+    // });
+      
+      // this.dataModel = {
+      //   ...this.dataModel
+      // }
     });
     // 
     // this.http.post('http://localhost:4200/email', body)
