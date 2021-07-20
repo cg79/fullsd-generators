@@ -1,7 +1,7 @@
 
 import Xhr from './Xhr';
 export class XhrService {
-  private privateUrl = 'http://localhost:4200';
+  private privateUrl = '';
 
   constructor() {  }
 

@@ -1,0 +1,106 @@
+<div *mobxAutorun>
+  <app-my-tabs>
+    <app-my-tab tabTitle="JSON">
+      <div class="item">
+        <label>Codul JSON folosit la generarea claselor</label>
+        <!-- <pre>{{code | json}}</pre> -->
+        <app-code
+          [code]="code.value"
+          [(obj)]="inputJson"
+          prop="jsonAsString"
+          (onCodeChanged)="codeIsChanged($event)"
+        >
+        </app-code>
+        <button type="button" class="btn btn-link" (click)="generateKeys()">
+          View KEYS
+        </button>
+      </div>
+    </app-my-tab>
+    <app-my-tab tabTitle="Props">
+      <app-root-prop [root]="root"></app-root-prop>
+    </app-my-tab>
+    <app-my-tab tabTitle="Generare">
+      <div class="item">
+        <div *ngIf="root">
+          <div class="">
+            <label>
+              <input
+                type="radio"
+                id="control_02"
+                name="select"
+                [value]="1"
+                [(ngModel)]="mode"
+              />
+  
+              Use function object
+            </label>
+  
+            <label>
+              <input
+                type="radio"
+                id="control_02"
+                name="select"
+                [value]="2"
+                [(ngModel)]="mode"
+              />
+  
+              Use class
+            </label>
+  
+            <label>
+              <input
+                type="radio"
+                id="control_02"
+                name="select"
+                [value]="3"
+                [(ngModel)]="mode"
+              />
+  
+              Use typescript
+            </label>
+  
+            <label>
+              <input
+                type="checkbox"
+                id="useuniqueid"
+                name="unique_id"
+                [(ngModel)]="useuniqueid"
+              />
+              Use unique id
+            </label>
+  
+            <label>
+              <input
+                type="checkbox"
+                id="trackevents"
+                name="track"
+                [(ngModel)]="trackEvents"
+              />
+              Track events
+            </label>
+  
+            <button
+              type="button"
+              class="btn btn-link"
+              (click)="startCodeGenerator(root)"
+            >
+              generateJsClassFromJson
+            </button>
+          </div>
+          <div class="">
+            <app-code
+              [obj]="code"
+              [prop]="'generatedJsClass'"
+              (onCodeChanged)="codeIsChanged($event)"
+            >
+            </app-code>
+          </div>
+        </div>
+      </div>
+    </app-my-tab>
+  </app-my-tabs>
+
+  <div class="flex justcenter">
+    
+  </div>
+</div>

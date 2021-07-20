@@ -77,7 +77,6 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
    
     this.dataModel.sendDisabled  = true;
-    // const body = JSON.stringify({a:1})
     const body = {content:this.dataModel.emailBody};
 
     new XhrService().post(body, '/email')
