@@ -1,7 +1,11 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Inject } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MongoDataModel } from './models/MongoDataModel';
 import CustomObserver from './observers/CustomObserver';
+import { XhrService } from './xhr/XhrService';
+import { DOCUMENT } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
@@ -9,7 +13,7 @@ import CustomObserver from './observers/CustomObserver';
   styleUrls: ['./app.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
  
   dataModel: MongoDataModel | null = null;
 
@@ -24,80 +28,62 @@ export class AppComponent implements OnInit {
         ['code-block'],
         [{ 'header': 1 }, { 'header': 2 }],               // custom button values
         [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-        //[{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-        //[{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
-        //[{ 'direction': 'rtl' }],                         // text direction
-
-        //[{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-        //[{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-
-        //[{ 'font': [] }],
-        //[{ 'align': [] }],
-
-        ['clean'],                                         // remove formatting button
-
-        ['link'],
-        //['link', 'image', 'video']  
       ],
-      
     },
-
-    mention: {
-      allowedChars: /^[A-Za-z\sÅÄÖåäö]*$/,
-      mentionDenotationChars: ["@", "#"],
-      source: (searchTerm, renderList, mentionChar) => {
-        let values;
-
-        // if (mentionChar === "@") {
-        //   values = this.atValues;
-        // } else {
-        //   values = this.hashValues;
-        // }
-        
-        if (searchTerm.length === 0) {
-          renderList(values, searchTerm);
-        } else {
-          const matches = [];
-          for (var i = 0; i < values.length; i++)
-            if (~values[i].value.toLowerCase().indexOf(searchTerm.toLowerCase())) matches.push(values[i]);
-          renderList(matches, searchTerm);
-        }
-      },
-    },
-    "emoji-toolbar": true,
-    "emoji-textarea": false,
-    "emoji-shortname": true,
-    keyboard: {
-      bindings: {
-        // shiftEnter: {
-        //   key: 13,
-        //   shiftKey: true,
-        //   handler: (range, context) => {
-        //     // Handle shift+enter
-        //     console.log("shift+enter")
-        //   }
-        // },
-        enter:{
-          key:13,
-          handler: (range, context)=>{
-            console.log("enter");
-            return true;
-          }
-        }
-      }
-    }
   }
 
   ngOnInit(): void {
   }
 
-  constructor(private ref: ChangeDetectorRef){
+  script : any = null;
+
+  constructor() {
     // this.ref.detectChanges();
     this.dataModel = new MongoDataModel();
+
+
+    // let script = this.document.createElement("script");
+    //     script.setAttribute('data-name','BMC-Widget')
+    //     script.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    //     script.setAttribute('data-id', 'boulderproblems');
+    //     script.setAttribute('data-description', 'Thank you for your support!');
+    //     script.setAttribute('data-message', 'This web is free to use. Do you want to help supporting it?');
+    //     script.setAttribute('data-color',"#FF5F5F")
+    //     script.setAttribute('data-position','right')
+    //     script.setAttribute('data-x_margin','18')
+    //     script.setAttribute('data-y-margin','18')
+    //     script.async = true
+    //     this.script = script
 
     // CustomObserver.observe(this.dataModel, ['expression', 'mongoQuery'], () => {
     //   this.ref.detectChanges();
     // })
+
+
+  }
+  ngAfterViewInit(): void {
+    // debugger;
+    // document.head.appendChild(this.script);
+  }
+
+  sendEmail() {
+
+    if(!this.dataModel.emailBody) {
+      return;
+    }
+    debugger;
+    // const body = JSON.stringify({a:1})
+    const body = {content:this.dataModel.emailBody};
+
+    new XhrService().post(body, '/email')
+    .catch(ex => {
+      console.log(ex);
+    })
+    .finally(() => {
+      this.dataModel.emailBody = '';
+    });
+    // 
+    // this.http.post('http://localhost:4200/email', body)
   }
 
 

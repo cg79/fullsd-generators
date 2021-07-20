@@ -7,12 +7,41 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
+import * as cors from 'cors';
+import nodemailer from 'nodemailer';
+const smtpSettings = require('./settings');
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
   const distFolder = join(process.cwd(), 'dist/angular-starter/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
+  let transporter = null;
+
+  const sendEmail = function(obj) {
+    // create reusable transporter object using SMTP transport
+    // Logger.log(config.smtpSettings);
+    // Logger.log(config);
+    if (transporter == null) {
+      const smtpConfig = smtpSettings.fullsd;
+      transporter = nodemailer.createTransport(smtpConfig);
+    }
+
+    const emailMessage = {
+      from: smtpSettings.fullsd.from,
+      to: 'claudiu9379@yahoo.com',
+      subject: 'DevGenerators',
+      html: obj.body || 'asd',
+    };
+    
+    transporter.sendMail(emailMessage, (err, data, res) => {
+      if (err) {
+        console.log(err);
+      }
+    });
+  }
+
+  // server.use(express.json());
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
   server.engine('html', ngExpressEngine({
@@ -21,6 +50,8 @@ export function app(): express.Express {
 
   server.set('view engine', 'html');
   server.set('views', distFolder);
+
+  server.use(cors());
 
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
@@ -32,6 +63,23 @@ export function app(): express.Express {
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+  });
+
+  // server.post('/email', (req, res) => {
+  //   throw new Error('asdasd')
+  // })
+
+  server.post('/email', express.json(), (req, res) => {
+    // server.post('/email', (req, res) => {
+    // echo json
+    // res.json(req.body);
+    console.log(req.body);
+
+    sendEmail({
+      body: req.body
+    });
+    res.send({a:1});
+    // throw new Error(req.body)
   });
 
   return server;

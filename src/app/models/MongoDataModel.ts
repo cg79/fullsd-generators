@@ -6,6 +6,8 @@ import CustomObserver from "../observers/CustomObserver";
 
 
 export class MongoDataModel {
+
+    emailBody = '';
     expression = 'age >= 1 && (validated __ true || validated == 1)';
 
     mongoQueryObj = null;
