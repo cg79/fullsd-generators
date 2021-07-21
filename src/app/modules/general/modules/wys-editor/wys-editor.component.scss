@@ -1,0 +1,10 @@
+.mceContentBody{
+  overflow-y:auto!important;
+}
+.my-tinymce-container {
+  width: 212px;
+  .mce-edit-area {
+    height: 421px;
+    overflow-y: auto;
+  }
+}

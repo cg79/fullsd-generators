@@ -2,7 +2,7 @@ exports.id = 987;
 exports.ids = [987];
 exports.modules = {
 
-/***/ 8558:
+/***/ 68558:
 /*!***************************************************************************!*\
   !*** ./src/app/modules/general/contact/mailing/mailing-routing.module.ts ***!
   \***************************************************************************/
@@ -13,9 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "MailingRoutingModule": () => (/* binding */ MailingRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 9895);
-/* harmony import */ var _mailing_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mailing.component */ 8798);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _mailing_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mailing.component */ 98798);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 
@@ -33,7 +33,7 @@ MailingRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ 8798:
+/***/ 98798:
 /*!**********************************************************************!*\
   !*** ./src/app/modules/general/contact/mailing/mailing.component.ts ***!
   \**********************************************************************/
@@ -44,7 +44,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "MailingComponent": () => (/* binding */ MailingComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class MailingComponent {
     constructor() { }
@@ -61,7 +61,7 @@ MailingComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0_
 
 /***/ }),
 
-/***/ 1987:
+/***/ 71987:
 /*!*******************************************************************!*\
   !*** ./src/app/modules/general/contact/mailing/mailing.module.ts ***!
   \*******************************************************************/
@@ -72,9 +72,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "MailingModule": () => (/* binding */ MailingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 8583);
-/* harmony import */ var _mailing_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mailing-routing.module */ 8558);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 38583);
+/* harmony import */ var _mailing_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mailing-routing.module */ 68558);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 

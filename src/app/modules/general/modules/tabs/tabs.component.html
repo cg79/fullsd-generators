@@ -1,0 +1,20 @@
+<div class="{{refresher.yyy}} {{xxx}} tabscontainer style1 h100" *mobxAutorun >
+  <ul class="no my-tabs hhhh">
+    <li *ngFor="let tab of tabs" 
+      (click)="selectTab(tab)" 
+      (custclick)='tab.onClick($event)' 
+      [class.active]="tab.active"
+      class="mytab {{tab.notiftab}}">
+
+      <div *ngIf="!tab.hdr" >
+        <label class="cursor-pointer">{{tab.title}}</label>
+      </div>
+
+      <div *ngIf="tab.hdr">
+        <ng-template [ngTemplateOutlet]="tab.hdr"></ng-template>
+      </div>
+
+    </li>
+  </ul>
+  <ng-content ></ng-content>
+</div>

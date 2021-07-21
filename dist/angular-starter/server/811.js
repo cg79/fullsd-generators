@@ -2,7 +2,7 @@ exports.id = 811;
 exports.ids = [811];
 exports.modules = {
 
-/***/ 553:
+/***/ 20553:
 /*!*******************************************************************!*\
   !*** ./src/app/modules/general/contact/contact-routing.module.ts ***!
   \*******************************************************************/
@@ -13,9 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ContactRoutingModule": () => (/* binding */ ContactRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 9895);
-/* harmony import */ var _contact_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact.component */ 703);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _contact_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact.component */ 80703);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 
@@ -25,22 +25,22 @@ const routes = [
         path: '', component: _contact_component__WEBPACK_IMPORTED_MODULE_0__.ContactComponent, children: [
             {
                 path: '',
-                loadChildren: () => __webpack_require__.e(/*! import() */ 987).then(__webpack_require__.bind(__webpack_require__, /*! ./mailing/mailing.module */ 1987))
+                loadChildren: () => __webpack_require__.e(/*! import() */ 987).then(__webpack_require__.bind(__webpack_require__, /*! ./mailing/mailing.module */ 71987))
                     .then(m => m.MailingModule)
             },
             {
                 path: 'mailing',
-                loadChildren: () => __webpack_require__.e(/*! import() */ 987).then(__webpack_require__.bind(__webpack_require__, /*! ./mailing/mailing.module */ 1987))
+                loadChildren: () => __webpack_require__.e(/*! import() */ 987).then(__webpack_require__.bind(__webpack_require__, /*! ./mailing/mailing.module */ 71987))
                     .then(m => m.MailingModule)
             },
             {
                 path: 'map',
-                loadChildren: () => __webpack_require__.e(/*! import() */ 426).then(__webpack_require__.bind(__webpack_require__, /*! ./map/map.module */ 4426))
+                loadChildren: () => __webpack_require__.e(/*! import() */ 426).then(__webpack_require__.bind(__webpack_require__, /*! ./map/map.module */ 54426))
                     .then(m => m.MapModule)
             },
             {
                 path: '**',
-                loadChildren: () => __webpack_require__.e(/*! import() */ 987).then(__webpack_require__.bind(__webpack_require__, /*! ./mailing/mailing.module */ 1987))
+                loadChildren: () => __webpack_require__.e(/*! import() */ 987).then(__webpack_require__.bind(__webpack_require__, /*! ./mailing/mailing.module */ 71987))
                     .then(m => m.MailingModule)
             },
         ]
@@ -56,7 +56,7 @@ ContactRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ 703:
+/***/ 80703:
 /*!**************************************************************!*\
   !*** ./src/app/modules/general/contact/contact.component.ts ***!
   \**************************************************************/
@@ -67,8 +67,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ContactComponent": () => (/* binding */ ContactComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 9895);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 39895);
 
 
 class ContactComponent {
@@ -105,7 +105,7 @@ ContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0_
 
 /***/ }),
 
-/***/ 4811:
+/***/ 24811:
 /*!***********************************************************!*\
   !*** ./src/app/modules/general/contact/contact.module.ts ***!
   \***********************************************************/
@@ -116,10 +116,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ContactModule": () => (/* binding */ ContactModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 8583);
-/* harmony import */ var _contact_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact.component */ 703);
-/* harmony import */ var _contact_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact-routing.module */ 553);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 38583);
+/* harmony import */ var _contact_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact.component */ 80703);
+/* harmony import */ var _contact_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact-routing.module */ 20553);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 

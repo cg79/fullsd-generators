@@ -2,7 +2,7 @@ exports.id = 609;
 exports.ids = [609];
 exports.modules = {
 
-/***/ 2113:
+/***/ 53655:
 /*!*******************************************************************!*\
   !*** ./src/app/modules/application/example-services/safe.pipe.ts ***!
   \*******************************************************************/
@@ -13,8 +13,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SafePipe": () => (/* binding */ SafePipe)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ 9075);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ 39075);
 
 
 class SafePipe {
@@ -31,7 +31,7 @@ SafePipe.ɵpipe = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
 
 /***/ }),
 
-/***/ 9630:
+/***/ 79630:
 /*!*************************************************************************!*\
   !*** ./src/app/modules/application/example-services/song/mock-songs.ts ***!
   \*************************************************************************/
@@ -108,7 +108,7 @@ const SONGS = [
 
 /***/ }),
 
-/***/ 6977:
+/***/ 66977:
 /*!***************************************************************************!*\
   !*** ./src/app/modules/application/example-services/song/song.service.ts ***!
   \***************************************************************************/
@@ -119,8 +119,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SongService": () => (/* binding */ SongService)
 /* harmony export */ });
-/* harmony import */ var _mock_songs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mock-songs */ 9630);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _mock_songs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mock-songs */ 79630);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 class SongService {
@@ -161,7 +161,7 @@ class Song {
 
 /***/ }),
 
-/***/ 645:
+/***/ 60645:
 /*!*********************************************************************************!*\
   !*** ./src/app/modules/application/example-services/tutorial-routing.module.ts ***!
   \*********************************************************************************/
@@ -172,9 +172,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialRoutingModule": () => (/* binding */ TutorialRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 9895);
-/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial.component */ 866);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial.component */ 40866);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 
@@ -195,7 +195,7 @@ TutorialRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
 
 /***/ }),
 
-/***/ 866:
+/***/ 40866:
 /*!****************************************************************************!*\
   !*** ./src/app/modules/application/example-services/tutorial.component.ts ***!
   \****************************************************************************/
@@ -207,10 +207,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "TutorialComponent": () => (/* binding */ TutorialComponent)
 /* harmony export */ });
 /* harmony import */ var _song_song__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./song/song */ 3135);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _song_song_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./song/song.service */ 6977);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 8583);
-/* harmony import */ var _safe_pipe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./safe.pipe */ 2113);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _song_song_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./song/song.service */ 66977);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 38583);
+/* harmony import */ var _safe_pipe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./safe.pipe */ 53655);
 
 
 
@@ -378,7 +378,7 @@ TutorialComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3
 
 /***/ }),
 
-/***/ 8609:
+/***/ 78609:
 /*!*************************************************************************!*\
   !*** ./src/app/modules/application/example-services/tutorial.module.ts ***!
   \*************************************************************************/
@@ -389,11 +389,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialModule": () => (/* binding */ TutorialModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 8583);
-/* harmony import */ var _tutorial_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial-routing.module */ 645);
-/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tutorial.component */ 866);
-/* harmony import */ var _safe_pipe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./safe.pipe */ 2113);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 38583);
+/* harmony import */ var _tutorial_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial-routing.module */ 60645);
+/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tutorial.component */ 40866);
+/* harmony import */ var _safe_pipe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./safe.pipe */ 53655);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 

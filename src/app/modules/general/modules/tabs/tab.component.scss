@@ -1,0 +1,21 @@
+// .pane{
+  // padding: 1em;
+  // background-color: rgb(226, 19, 19);
+
+// }
+
+// .active {
+//   color: #495057;
+//   background-color: #fff;
+//   border-color: #dee2e6 #dee2e6 #fff;
+// }
+
+.style1 ul {
+  background-color: #eee;
+  border: 0;
+  display: flex;
+  padding: 0 2rem;
+  position: relative;
+  left: -2rem;
+  width: calc(100% + 4rem);
+}

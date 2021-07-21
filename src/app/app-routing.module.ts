@@ -18,6 +18,11 @@ const routes: Routes = [
       .then(mod => mod.MqueryModule)
   },
   {
+    path: 'generator',
+    loadChildren: () => import('./modules/general/generator/generator.module')
+      .then(mod => mod.GeneratorModule)
+  },
+  {
     path: 'components',
     loadChildren: () => import('./modules/application/example-components/tutorial.module')
       .then(mod => mod.TutorialModule)

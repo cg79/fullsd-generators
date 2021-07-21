@@ -1,0 +1,46 @@
+/* File Uploader Styles  */
+
+.imgviewer {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #efefef;
+  background-color: rgba(0, 0, 0, 0.02);
+  display: -webkit-flex;
+  display: flex;
+  height: 150px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  outline: 3px dashed #ccc;
+  // outline-offset: 5px;
+  position: relative;
+  width: 150px;
+  margin-left: 2px;
+  &.small{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.imgviewer img,
+.imgviewer .icon {
+  pointer-events: none;
+}
+
+.imgviewer img {
+  //left: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  //top: 50%;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  //-webkit-transform: translate(-50%, -50%);
+  //-moz-transform: translate(-50%, -50%);
+  //-ms-transform: translate(-50%, -50%);
+  //-o-transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
+  //z-index: -1;
+}

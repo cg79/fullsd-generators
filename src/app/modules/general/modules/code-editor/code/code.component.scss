@@ -1,0 +1,37 @@
+.brd1 {
+  border: 1px solid gray;
+}
+
+.error {
+  color: red;
+}
+
+.test-button {
+  margin-left: 40px;
+}
+
+.my-code-editor {
+  height: 400px;
+}
+
+.editor{
+  height: 100%;
+  width: 100%;
+ } 
+
+.my-code-editor .editor-container {
+    height: calc(100vh - 100px);
+}
+
+/* .code {
+  display: inline!important;
+  position: absolute;
+} */
+
+.monaco-editor {
+  position: absolute;
+}
+
+.code {
+  height: 100%!important;
+} 

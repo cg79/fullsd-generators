@@ -2,7 +2,7 @@ exports.id = 3;
 exports.ids = [3];
 exports.modules = {
 
-/***/ 3385:
+/***/ 23385:
 /*!********************************************************************************************************!*\
   !*** ./src/app/modules/application/example-template-driven-forms/01-single/exercice-routing.module.ts ***!
   \********************************************************************************************************/
@@ -13,9 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ExerciceRoutingModule": () => (/* binding */ ExerciceRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 9895);
-/* harmony import */ var _exercice_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./exercice.component */ 6020);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _exercice_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./exercice.component */ 16020);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 
@@ -36,7 +36,7 @@ ExerciceRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
 
 /***/ }),
 
-/***/ 6020:
+/***/ 16020:
 /*!***************************************************************************************************!*\
   !*** ./src/app/modules/application/example-template-driven-forms/01-single/exercice.component.ts ***!
   \***************************************************************************************************/
@@ -47,7 +47,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ExerciceComponent": () => (/* binding */ ExerciceComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 3679);
 
 
@@ -76,7 +76,7 @@ ExerciceComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0
 
 /***/ }),
 
-/***/ 9003:
+/***/ 29003:
 /*!************************************************************************************************!*\
   !*** ./src/app/modules/application/example-template-driven-forms/01-single/exercice.module.ts ***!
   \************************************************************************************************/
@@ -87,11 +87,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ExerciceModule": () => (/* binding */ ExerciceModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 8583);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 38583);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 3679);
-/* harmony import */ var _exercice_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./exercice-routing.module */ 3385);
-/* harmony import */ var _exercice_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./exercice.component */ 6020);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _exercice_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./exercice-routing.module */ 23385);
+/* harmony import */ var _exercice_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./exercice.component */ 16020);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 

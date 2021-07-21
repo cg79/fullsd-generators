@@ -1,0 +1,22 @@
+<div *mobxAutorun>
+  <div *ngIf="obj" >
+    <label class="uploader small" ondragover="return false;" [class.loaded]="loaded"
+      [style.outlineColor]="dragging ? activeColor : baseColor" 
+      (dragenter)="handleDragEnter()"
+      (dragleave)="handleDragLeave()" 
+      (drop)="handleDrop($event)"
+      >
+
+      <em class="icon icon-upload" *ngIf="!loaded && imageSrc" [style.color]="dragging
+            ? ((imageSrc.length > 0) ? overlayColor : activeColor)
+            : ((imageSrc.length > 0) ? overlayColor : baseColor)"></em>
+
+      <img alt="" [src]="obj.imageSrc" (load)="handleImageLoad()" [class.loaded]="imageLoaded" />
+      <input type="file" name="file" accept="image/*" (click)="handleClick($event)"
+        (change)="handleInputChange($event)">
+    </label>
+
+
+    <button *ngIf="obj.hasContent()" type="button" class="btn btn-link" (click)="deletePicture(obj)">{{'DELETE' | ls}}</button>
+  </div>
+</div>

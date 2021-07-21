@@ -1,0 +1,19 @@
+<div class="code" *mobxAutorun>
+  <!-- <div ace-editor
+         [(text)]="text"
+         [mode]="'javascript'"
+         [theme]="'eclipse'"
+         (textChanged)="onChange($event)"
+         style="min-height: 200px; width:100%; overflow: auto;">
+    </div> -->
+    <ngx-monaco-editor class="my-code-editor" [options]="editorOptions" [(ngModel)]="obj[prop]" (onInit)="editorOptions.onInit($event)"></ngx-monaco-editor>
+</div>
+
+
+
+
+
+
+
+
+

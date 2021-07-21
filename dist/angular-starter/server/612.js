@@ -13,8 +13,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SmartphoneComponent": () => (/* binding */ SmartphoneComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _smartphone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./smartphone */ 9653);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _smartphone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./smartphone */ 49653);
 
 
 
@@ -78,7 +78,7 @@ SmartphoneComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE
 
 /***/ }),
 
-/***/ 9653:
+/***/ 49653:
 /*!*********************************************************************************!*\
   !*** ./src/app/modules/application/example-components/smartphone/smartphone.ts ***!
   \*********************************************************************************/
@@ -101,7 +101,7 @@ class Smartphone {
 
 /***/ }),
 
-/***/ 6962:
+/***/ 46962:
 /*!***********************************************************************************!*\
   !*** ./src/app/modules/application/example-components/tutorial-routing.module.ts ***!
   \***********************************************************************************/
@@ -112,9 +112,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialRoutingModule": () => (/* binding */ TutorialRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 9895);
-/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial.component */ 5988);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial.component */ 65988);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 
@@ -135,7 +135,7 @@ TutorialRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
 
 /***/ }),
 
-/***/ 5988:
+/***/ 65988:
 /*!******************************************************************************!*\
   !*** ./src/app/modules/application/example-components/tutorial.component.ts ***!
   \******************************************************************************/
@@ -146,8 +146,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialComponent": () => (/* binding */ TutorialComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 8583);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 38583);
 /* harmony import */ var _smartphone_smartphone_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./smartphone/smartphone.component */ 9858);
 
 
@@ -301,7 +301,7 @@ TutorialComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1
 
 /***/ }),
 
-/***/ 6545:
+/***/ 66545:
 /*!***************************************************************************!*\
   !*** ./src/app/modules/application/example-components/tutorial.module.ts ***!
   \***************************************************************************/
@@ -312,11 +312,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialModule": () => (/* binding */ TutorialModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 8583);
-/* harmony import */ var _tutorial_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial-routing.module */ 6962);
-/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tutorial.component */ 5988);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 38583);
+/* harmony import */ var _tutorial_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial-routing.module */ 46962);
+/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tutorial.component */ 65988);
 /* harmony import */ var _smartphone_smartphone_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./smartphone/smartphone.component */ 9858);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 

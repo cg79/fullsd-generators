@@ -13,9 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialRoutingModule": () => (/* binding */ TutorialRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 9895);
-/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial.component */ 5919);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial.component */ 85919);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 
@@ -30,17 +30,17 @@ const routes = [
             },
             {
                 path: 'single',
-                loadChildren: () => __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(__webpack_require__, /*! ./01-single/exercice.module */ 9003))
+                loadChildren: () => __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(__webpack_require__, /*! ./01-single/exercice.module */ 29003))
                     .then(mod => mod.ExerciceModule)
             },
             {
                 path: 'multi',
-                loadChildren: () => __webpack_require__.e(/*! import() */ 707).then(__webpack_require__.bind(__webpack_require__, /*! ./02-multi/exercice.module */ 9707))
+                loadChildren: () => __webpack_require__.e(/*! import() */ 707).then(__webpack_require__.bind(__webpack_require__, /*! ./02-multi/exercice.module */ 29707))
                     .then(mod => mod.ExerciceModule)
             },
             {
                 path: 'init-class',
-                loadChildren: () => __webpack_require__.e(/*! import() */ 896).then(__webpack_require__.bind(__webpack_require__, /*! ./03-init-class/exercice.module */ 5896))
+                loadChildren: () => __webpack_require__.e(/*! import() */ 896).then(__webpack_require__.bind(__webpack_require__, /*! ./03-init-class/exercice.module */ 25896))
                     .then(mod => mod.ExerciceModule)
             },
             {
@@ -61,7 +61,7 @@ TutorialRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
 
 /***/ }),
 
-/***/ 5919:
+/***/ 85919:
 /*!*****************************************************************************************!*\
   !*** ./src/app/modules/application/example-template-driven-forms/tutorial.component.ts ***!
   \*****************************************************************************************/
@@ -72,8 +72,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialComponent": () => (/* binding */ TutorialComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 9895);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 39895);
 
 
 class TutorialComponent {
@@ -101,11 +101,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialModule": () => (/* binding */ TutorialModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 8583);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 38583);
 /* harmony import */ var _tutorial_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial-routing.module */ 8824);
-/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tutorial.component */ 5919);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ 1841);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tutorial.component */ 85919);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ 91841);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 

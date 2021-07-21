@@ -2,7 +2,7 @@ exports.id = 297;
 exports.ids = [297];
 exports.modules = {
 
-/***/ 7863:
+/***/ 47863:
 /*!*********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/alerts/items.component.ts ***!
   \*********************************************************************************/
@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AlertsComponent": () => (/* binding */ AlertsComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class AlertsComponent {
     constructor() { }
@@ -72,7 +72,7 @@ AlertsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__
 
 /***/ }),
 
-/***/ 7906:
+/***/ 37906:
 /*!********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/badge/items.component.ts ***!
   \********************************************************************************/
@@ -83,7 +83,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "BadgeComponent": () => (/* binding */ BadgeComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class BadgeComponent {
     constructor() { }
@@ -226,7 +226,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "BlockquotesComponent": () => (/* binding */ BlockquotesComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class BlockquotesComponent {
     constructor() { }
@@ -278,7 +278,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "BreadcrumbComponent": () => (/* binding */ BreadcrumbComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class BreadcrumbComponent {
     constructor() { }
@@ -335,7 +335,7 @@ BreadcrumbComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE
 
 /***/ }),
 
-/***/ 1683:
+/***/ 41683:
 /*!**********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/buttons/items.component.ts ***!
   \**********************************************************************************/
@@ -346,7 +346,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ButtonsComponent": () => (/* binding */ ButtonsComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class ButtonsComponent {
     constructor() { }
@@ -433,7 +433,7 @@ ButtonsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0_
 
 /***/ }),
 
-/***/ 4697:
+/***/ 14697:
 /*!***********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/collapse/items.component.ts ***!
   \***********************************************************************************/
@@ -444,7 +444,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "CollapseComponent": () => (/* binding */ CollapseComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class CollapseComponent {
     constructor() { }
@@ -550,7 +550,7 @@ CollapseComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0
 
 /***/ }),
 
-/***/ 9433:
+/***/ 69433:
 /*!************************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/dropdowns/items.component.ts ***!
   \************************************************************************************/
@@ -561,7 +561,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "DropdownsComponent": () => (/* binding */ DropdownsComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class DropdownsComponent {
     constructor() { }
@@ -635,7 +635,7 @@ DropdownsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_
 
 /***/ }),
 
-/***/ 5783:
+/***/ 55783:
 /*!********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/forms/items.component.ts ***!
   \********************************************************************************/
@@ -646,7 +646,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FormsComponent": () => (/* binding */ FormsComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class FormsComponent {
     constructor() { }
@@ -725,7 +725,7 @@ FormsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__[
 
 /***/ }),
 
-/***/ 1665:
+/***/ 31665:
 /*!*************************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/list-group/items.component.ts ***!
   \*************************************************************************************/
@@ -736,7 +736,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ListGroupComponent": () => (/* binding */ ListGroupComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class ListGroupComponent {
     constructor() { }
@@ -825,7 +825,7 @@ ListGroupComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_
 
 /***/ }),
 
-/***/ 5661:
+/***/ 65661:
 /*!********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/modal/items.component.ts ***!
   \********************************************************************************/
@@ -836,7 +836,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ModalComponent": () => (/* binding */ ModalComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class ModalComponent {
     constructor() { }
@@ -883,7 +883,7 @@ ModalComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__[
 
 /***/ }),
 
-/***/ 4029:
+/***/ 54029:
 /*!*************************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/pagination/items.component.ts ***!
   \*************************************************************************************/
@@ -894,7 +894,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "PaginationComponent": () => (/* binding */ PaginationComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class PaginationComponent {
     constructor() { }
@@ -977,7 +977,7 @@ PaginationComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE
 
 /***/ }),
 
-/***/ 4566:
+/***/ 94566:
 /*!***********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/popovers/items.component.ts ***!
   \***********************************************************************************/
@@ -988,7 +988,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "PopoversComponent": () => (/* binding */ PopoversComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class PopoversComponent {
   constructor() {}
@@ -1059,7 +1059,7 @@ PopoversComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0_
 
 /***/ }),
 
-/***/ 951:
+/***/ 10951:
 /*!***********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/progress/items.component.ts ***!
   \***********************************************************************************/
@@ -1070,7 +1070,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ProgressComponent": () => (/* binding */ ProgressComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class ProgressComponent {
     constructor() { }
@@ -1103,7 +1103,7 @@ ProgressComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0
 
 /***/ }),
 
-/***/ 8616:
+/***/ 78803:
 /*!***********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/spinners/items.component.ts ***!
   \***********************************************************************************/
@@ -1114,7 +1114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SpinnersComponent": () => (/* binding */ SpinnersComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class SpinnersComponent {
     constructor() { }
@@ -1175,7 +1175,7 @@ SpinnersComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0
 
 /***/ }),
 
-/***/ 2358:
+/***/ 92358:
 /*!*********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/toasts/items.component.ts ***!
   \*********************************************************************************/
@@ -1186,7 +1186,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ToastsComponent": () => (/* binding */ ToastsComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class ToastsComponent {
   constructor() {}
@@ -1250,7 +1250,7 @@ ToastsComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__[
 
 /***/ }),
 
-/***/ 6697:
+/***/ 36697:
 /*!***********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/tooltips/items.component.ts ***!
   \***********************************************************************************/
@@ -1261,7 +1261,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TooltipsComponent": () => (/* binding */ TooltipsComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 
 class TooltipsComponent {
   constructor() {}
@@ -1318,7 +1318,7 @@ TooltipsComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0_
 
 /***/ }),
 
-/***/ 9779:
+/***/ 39779:
 /*!**********************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/tutorial-routing.module.ts ***!
   \**********************************************************************************/
@@ -1329,25 +1329,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialRoutingModule": () => (/* binding */ TutorialRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/router */ 9895);
-/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial.component */ 6498);
-/* harmony import */ var _alerts_items_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./alerts/items.component */ 7863);
-/* harmony import */ var _badge_items_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./badge/items.component */ 7906);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial.component */ 36498);
+/* harmony import */ var _alerts_items_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./alerts/items.component */ 47863);
+/* harmony import */ var _badge_items_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./badge/items.component */ 37906);
 /* harmony import */ var _blockquotes_items_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blockquotes/items.component */ 9628);
 /* harmony import */ var _breadcrumb_items_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./breadcrumb/items.component */ 8710);
-/* harmony import */ var _buttons_items_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./buttons/items.component */ 1683);
-/* harmony import */ var _tooltips_items_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./tooltips/items.component */ 6697);
-/* harmony import */ var _collapse_items_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./collapse/items.component */ 4697);
-/* harmony import */ var _dropdowns_items_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dropdowns/items.component */ 9433);
-/* harmony import */ var _forms_items_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./forms/items.component */ 5783);
-/* harmony import */ var _list_group_items_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./list-group/items.component */ 1665);
-/* harmony import */ var _modal_items_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modal/items.component */ 5661);
-/* harmony import */ var _pagination_items_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pagination/items.component */ 4029);
-/* harmony import */ var _popovers_items_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./popovers/items.component */ 4566);
-/* harmony import */ var _progress_items_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./progress/items.component */ 951);
-/* harmony import */ var _spinners_items_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./spinners/items.component */ 8616);
-/* harmony import */ var _toasts_items_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./toasts/items.component */ 2358);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _buttons_items_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./buttons/items.component */ 41683);
+/* harmony import */ var _tooltips_items_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./tooltips/items.component */ 36697);
+/* harmony import */ var _collapse_items_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./collapse/items.component */ 14697);
+/* harmony import */ var _dropdowns_items_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dropdowns/items.component */ 69433);
+/* harmony import */ var _forms_items_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./forms/items.component */ 55783);
+/* harmony import */ var _list_group_items_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./list-group/items.component */ 31665);
+/* harmony import */ var _modal_items_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modal/items.component */ 65661);
+/* harmony import */ var _pagination_items_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pagination/items.component */ 54029);
+/* harmony import */ var _popovers_items_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./popovers/items.component */ 94566);
+/* harmony import */ var _progress_items_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./progress/items.component */ 10951);
+/* harmony import */ var _spinners_items_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./spinners/items.component */ 78803);
+/* harmony import */ var _toasts_items_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./toasts/items.component */ 92358);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 
@@ -1373,7 +1373,7 @@ const routes = [
         path: '', component: _tutorial_component__WEBPACK_IMPORTED_MODULE_0__.TutorialComponent, children: [
             {
                 path: '',
-                loadChildren: () => __webpack_require__.e(/*! import() */ 614).then(__webpack_require__.bind(__webpack_require__, /*! ./00-main/exercice.module */ 614))
+                loadChildren: () => __webpack_require__.e(/*! import() */ 614).then(__webpack_require__.bind(__webpack_require__, /*! ./00-main/exercice.module */ 40614))
                     .then(mod => mod.ExerciceModule)
             },
             { path: 'alerts', component: _alerts_items_component__WEBPACK_IMPORTED_MODULE_1__.AlertsComponent },
@@ -1411,7 +1411,7 @@ TutorialRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
 
 /***/ }),
 
-/***/ 6498:
+/***/ 36498:
 /*!*****************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/tutorial.component.ts ***!
   \*****************************************************************************/
@@ -1422,8 +1422,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialComponent": () => (/* binding */ TutorialComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 9895);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 39895);
 
 
 class TutorialComponent {
@@ -1444,7 +1444,7 @@ TutorialComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0
 
 /***/ }),
 
-/***/ 7297:
+/***/ 57297:
 /*!**************************************************************************!*\
   !*** ./src/app/modules/application/example-bootstrap/tutorial.module.ts ***!
   \**************************************************************************/
@@ -1455,10 +1455,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TutorialModule": () => (/* binding */ TutorialModule)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 8583);
-/* harmony import */ var _tutorial_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial-routing.module */ 9779);
-/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tutorial.component */ 6498);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 38583);
+/* harmony import */ var _tutorial_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tutorial-routing.module */ 39779);
+/* harmony import */ var _tutorial_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tutorial.component */ 36498);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 37716);
 
 
 

@@ -55,6 +55,11 @@ const routes = [
             .then(mod => mod.MqueryModule)
     },
     {
+        path: 'generator',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_modules_general_generator_generator_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./modules/general/generator/generator.module */ 8489))
+            .then(mod => mod.GeneratorModule)
+    },
+    {
         path: 'components',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_modules_application_example-components_tutorial_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./modules/application/example-components/tutorial.module */ 3612))
             .then(mod => mod.TutorialModule)

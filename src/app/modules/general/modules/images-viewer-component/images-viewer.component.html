@@ -1,0 +1,14 @@
+<span *mobxAutorun>
+
+  <!-- todo https://www.iconfinder.com/iconsets/Hand_Drawn_Web_Icon_Set -->
+
+  <div class="flex-grid">
+    <div *ngFor="let el of pictures">
+      <div *ngIf="el.status !== 3" class="col">
+        <app-image-viewer-component [obj]="el" prop="fileContent" (fileAddedEvent)="onFileAddedEvent($event)"
+          (fileRemovedEvent)="onFileRemovedEvent($event)"></app-image-viewer-component>
+      </div>
+
+    </div>
+  </div>
+</span>
