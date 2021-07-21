@@ -4,22 +4,9 @@
 
 > it's part of a repo series designed to create a Web Application with Angular
 
-# Web Application Live Demo
-[https://angular.ganatan.com](https://angular.ganatan.com)
-
-
 ## Quick start
 
 ```bash
-# choose a repo
-# download the example or clone the repo from github
-git clone https://github.com/ganatan/angular-ssr.git
-
-# download the example or clone the repo from gitlab
-git clone https://gitlab.com/ganatan/angular-ssr.git
-
-# download the example or clone the repo from bitbucket
-git clone https://bitbucket.org/ganatan/angular-ssr.git
 
 # change directory
 cd angular-example-ssr
@@ -69,17 +56,5 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Author  : danny
+* Author  : claudiu gombos
 
-### Documentation
-
-English Tutorials
-- Installation - https://www.ganatan.com/tutorials/server-side-rendering-with-angular-universal
-- Tutorials Step by Step - https://www.ganatan.com/tutorials/en
-
-Tutoriels en français
-- Installation - https://www.ganatan.com/tutorials/server-side-rendering-avec-angular-universal
-- Tutoriels Etape par étape - https://www.ganatan.com/tutorials
-
-
-node dist/angular-starter/server/main.js

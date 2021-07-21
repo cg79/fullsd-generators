@@ -7,100 +7,93 @@
           <input [(ngModel)]="root.name" type="text" />
 
         </label>
-        {{root.guid}}
+        <!-- {{root.guid}} -->
       </li>
       <li *ngFor="let p of root.props; index as i;">
         <div *ngIf="p.key !== 'root'">
-          <div class="row">
+          <div class="row cpointer" (click)="p.select()">
             <label>
-              {{p.key}}
-
-              {{p.guid}}
-            </label>
-            <label>
+              <span class="bold">{{p.key}}</span>
               {{p.type}}
+              <!-- {{p.guid}} -->
             </label>
+          </div>
+
+
+          <div class="prop-settings {{p.vis}}">
+            <div class="row">
               <label>
                 <input type="radio" name="{{root.guid}}" [(ngModel)]="root.key" [value]=p.key>
                 Is KEY
               </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <input [(ngModel)]="p.customtype" type="text" />
+                Custom type name
+              </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <input [(ngModel)]="p.isPrivate" type="checkbox" />
+                IsPrivate
+              </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <input [(ngModel)]="p.isRequired" type="checkbox" />
+                Is Required
+              </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <input [(ngModel)]="p.isInterface" type="checkbox" />
+                Is Interface
+              </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <input [(ngModel)]="p.getset" type="checkbox" />
+                GETTER SETTER
+              </label>
+            </div>
+
+            <!-- <div class="row">
+              <label>
+                <input [(ngModel)]="p.get" type="checkbox" />
+                Get
+              </label>
+            </div> -->
+
+            <!-- <div class="row">
+              <label>
+                <input [(ngModel)]="p.set" type="checkbox" />
+                Set
+              </label>
+            </div> -->
+
+            <div class="row">
+              <label>
+                <input [(ngModel)]="p.constant" type="checkbox" />
+                Constant
+              </label>
+            </div>
+
+
+            <div class="row">
+              <label>
+                <input [(ngModel)]="p.observable" type="checkbox" />
+                Observable
+              </label>
+            </div>
+
           </div>
 
-          
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.customtype" type="text" />
-              Custom type name
-            </label>
-          </div>
-  
-
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.isPrivate" type="checkbox" />
-              IsPrivate
-            </label>
-          </div>
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.isRequired" type="checkbox" />
-              Is Required
-            </label>
-          </div>
-
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.isInterface" type="checkbox" />
-              Is Interface
-            </label>
-          </div>
-
-
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.getset" type="checkbox" />
-              GETTER SETTER
-            </label>
-
-            
-          </div>
-
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.get" type="checkbox" />
-              Get
-            </label>
-          </div>
-
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.set" type="checkbox" />
-              Set
-            </label>
-          </div>
-
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.constant" type="checkbox" />
-              Constant
-            </label>
-          </div>
-
-
-          <div class="row">
-            <label>
-              <input [(ngModel)]="p.observable" type="checkbox" />
-              Observable
-            </label>
-          </div>
-
-          <!-- <div class="row">
-            <label>
-              Name
-              <input [(ngModel)]="p.name" type="text" />
-
-            </label>
-          </div> -->
         </div>
 
         <div *ngIf="p.root">

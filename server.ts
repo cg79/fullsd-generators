@@ -9,7 +9,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 import * as cors from 'cors';
 import nodemailer from 'nodemailer';
-const smtpSettings = require('./settings');
+// const smtpSettings = require('./settings');
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -18,10 +18,17 @@ export function app(): express.Express {
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
   let transporter = null;
 
+  function readFileAsJson (fileName) {
+    return require(fileName)
+  }
+
   const sendEmail = function(obj) {
     // create reusable transporter object using SMTP transport
     // Logger.log(config.smtpSettings);
     // Logger.log(config);
+    debugger;
+    const smtpSettings = readFileAsJson('./smtp.json');
+
     if (transporter == null) {
       const smtpConfig = smtpSettings.fullsd;
       transporter = nodemailer.createTransport(smtpConfig);

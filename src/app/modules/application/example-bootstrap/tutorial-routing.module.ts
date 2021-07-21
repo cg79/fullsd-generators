@@ -18,7 +18,6 @@ import { PaginationComponent } from './pagination/items.component';
 import { PopoversComponent } from './popovers/items.component';
 import { ProgressComponent } from './progress/items.component';
 import { SpinnersComponent } from './spinners/items.component';
-import { ToastsComponent } from './toasts/items.component';
 
 const routes: Routes = [
   {
@@ -43,7 +42,6 @@ const routes: Routes = [
       { path: 'popovers', component: PopoversComponent },
       { path: 'progress', component: ProgressComponent },
       { path: 'spinners', component: SpinnersComponent },
-      { path: 'toasts', component: ToastsComponent },
       {
         path: '',
         redirectTo: '/bootstrap/alerts',

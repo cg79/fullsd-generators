@@ -2,7 +2,11 @@ import { observable } from 'mobx';
 
 class JSONToBeProcessed {
 
-  @observable jsonAsString = '';
+  @observable jsonAsString = `
+  {
+    name: "John", 
+    age: 18
+  }`;
 
   @observable result = '';
 

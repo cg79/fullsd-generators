@@ -23,6 +23,8 @@ export class IRootProp {
 
   @observable name = '';
   guid = '';
+
+  @observable vis = 'none';
   @observable root: IRoot = null;
   // constant: false
 
@@ -32,8 +34,8 @@ export class IRootProp {
     this.value = value;
     this.type = type;
     this.isPrivate = isPrivate;
-    this.get = get;
-    this.set = set;
+    // this.get = get;
+    // this.set = set;
     this.isObservable = isObservable;
     this.name = name;
     this.guid =guid;
@@ -45,6 +47,10 @@ export class IRootProp {
     if (root) {
       this.root = new IRoot(root);
     }
+  }
+
+  select() {
+    this.vis = this.vis === 'none' ? 'yes': 'none';
   }
 
 }

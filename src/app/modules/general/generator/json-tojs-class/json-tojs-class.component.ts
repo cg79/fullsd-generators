@@ -165,14 +165,22 @@ export class JsonTojsClassComponent implements OnInit {
     function ${root.name}(obj){`;
 
     const thisPorps = this.createThisProperties(props);
-    const functions = this.createThisFunctions(props);
+    debugger;
+    // const functions = this.createThisFunctions(props);
+
+    const gettersSetters = this.createGettersAndSetters(root.name, props);
+    
     return `
       ${result}
       ${this.createDestructorObj(props)}
       ${thisPorps}
-      ${functions}
+      
     }
+
+    ${gettersSetters}
     `;
+
+    // 
   }
 
   createDestructorObj(keys) {
@@ -217,6 +225,35 @@ export class JsonTojsClassComponent implements OnInit {
     });
 
     return arr.join("");
+  }
+
+  createGettersAndSetters(onjName, keys) {
+    const arr = [];
+    keys.forEach(el => {
+      // const { name, isPrivate, type, isRequired } = el;
+      arr.push(this.createGetterAndSetter(onjName, el))
+
+    });
+
+    return arr.join("");
+  }
+
+  createGetterAndSetter(objName, prop){
+    let getset = `
+      get : function() {
+        return this.${prop.name};
+      },
+      set : function(value) {
+        return this.${prop.name} = value;
+      }
+    `;
+    
+    const response = `
+    Object.defineProperty(${objName}.prototype, '${prop.name}', {
+      ${getset}
+    });`;
+
+    return response;
   }
 
   createArrayMethods(node: IRoot, keys: IRootProp[]) {
@@ -342,7 +379,7 @@ export class JsonTojsClassComponent implements OnInit {
       case 'number':
         return '0';
       case 'string':
-        return '';
+        return "''";
       case 'object':
         return '';
       case 'boolean':
