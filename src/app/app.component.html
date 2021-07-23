@@ -345,7 +345,11 @@
   <div class="content flex-center">
     <!-- Resources -->
     <h2>Send a change request or feedback </h2>
-    <p>I will try to respond/fix in maximum 48 h</p>
+    <!-- <p>I will try to respond/fix in maximum 48 h</p> -->
+    <div class="card-container">
+      <span>You can send an email to claudiu9379@yahoo.com</span>
+      <a href="mailto:claudiu9379@yahoo.com">Send Email</a>
+    </div>
 
   </div>
 
@@ -358,13 +362,13 @@
   </svg>
 
 
-  <quill-editor [(ngModel)]="dataModel.emailBody" placeholder="Feedback message" [modules]="quillConfig"></quill-editor>
-
-  <!-- <pre>{{dataModel.emailBody}}</pre> -->
+  <!-- <quill-editor [(ngModel)]="dataModel.emailBody" placeholder="Feedback message" [modules]="quillConfig"></quill-editor>
 
   <div class="card-container">
     <input type="button" value="Send Message" (click)="sendEmail()" [disabled]="!dataModel.emailBody || dataModel.sendDisabled" />
-  </div>
+  </div> -->
+
+  
 
 
   <!-- <i class="fa fa-coffee"></i> -->

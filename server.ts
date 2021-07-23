@@ -7,6 +7,7 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
+import * as fs from 'fs';
 import * as cors from 'cors';
 import nodemailer from 'nodemailer';
 // const smtpSettings = require('./settings');
@@ -21,8 +22,18 @@ export function app(): express.Express {
   server.use(express.static('assets'));
   // server.use(express.static('public'));
 
+  // function readFileAsJson (fileName) {
+  //   return require(fileName)
+  // }
+
   function readFileAsJson (fileName) {
-    return require(fileName)
+    const fName = join('dist/angular-starter/server', 'smtp.json');
+
+    var obj = JSON.parse(fs.readFileSync(fName, 'utf8'));
+    return obj;
+
+    // return require(fName)
+    // return require(fileName)
   }
 
   const sendEmail = function(obj) {
@@ -30,7 +41,8 @@ export function app(): express.Express {
     // Logger.log(config.smtpSettings);
     // Logger.log(config);
     debugger;
-    const smtpSettings = readFileAsJson('./smtp.json');
+    const smtpSettings = readFileAsJson('smtp.json');
+    console.log(smtpSettings);
 
     if (transporter == null) {
       const smtpConfig = smtpSettings.fullsd;

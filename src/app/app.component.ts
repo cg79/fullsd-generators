@@ -82,8 +82,14 @@ export class AppComponent implements OnInit, AfterViewInit {
     new XhrService().post(body, '/email')
     .catch(ex => {
       console.log(ex);
+      setTimeout(() => {
+        this.dataModel.emailBody = '';
+        this.dataModel.sendDisabled  = false;
+      }, 1 * 1000)
+
     })
-    .finally(() => {
+    .then((response) => {
+      console.log(response);
       debugger;
       // this._ngZone.run(() => {
         setTimeout(() => {
