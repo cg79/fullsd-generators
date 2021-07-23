@@ -18,6 +18,9 @@ export function app(): express.Express {
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
   let transporter = null;
 
+  server.use(express.static('assets'));
+  // server.use(express.static('public'));
+
   function readFileAsJson (fileName) {
     return require(fileName)
   }
@@ -88,6 +91,10 @@ export function app(): express.Express {
     res.send({a:1});
     // throw new Error(req.body)
   });
+
+  // server.get('/assets/*', async (ctx) => {
+  //   await send(ctx, ctx.path);
+  // });
 
   return server;
 }
