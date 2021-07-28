@@ -41,26 +41,32 @@ export function app(): express.Express {
     // Logger.log(config.smtpSettings);
     // Logger.log(config);
     debugger;
-    const smtpSettings = readFileAsJson('smtp.json');
-    console.log(smtpSettings);
 
-    if (transporter == null) {
-      const smtpConfig = smtpSettings.fullsd;
-      transporter = nodemailer.createTransport(smtpConfig);
-    }
-
-    const emailMessage = {
-      from: smtpSettings.fullsd.from,
-      to: 'claudiu9379@yahoo.com',
-      subject: 'DevGenerators',
-      html: obj.body || 'asd',
-    };
-    
-    transporter.sendMail(emailMessage, (err, data, res) => {
-      if (err) {
-        console.log(err);
+    return new Promise((resolve, reject) => {
+      const smtpSettings = readFileAsJson('smtp.json');
+      console.log(smtpSettings);
+  
+      if (transporter == null) {
+        transporter = nodemailer.createTransport(smtpSettings);
       }
-    });
+  
+      const emailMessage = {
+        from: smtpSettings.from,
+        to: 'claudiu9379@yahoo.com',
+        subject: 'DevGenerators',
+        html: obj.body || 'asd',
+      };
+      
+      transporter.sendMail(emailMessage, (err, data, res) => {
+        if (err) {
+          console.log(err);
+          return reject(err)
+        }
+        resolve({success: 1});
+      });
+
+    })
+    
   }
 
   // server.use(express.json());
@@ -99,8 +105,14 @@ export function app(): express.Express {
 
     sendEmail({
       body: req.body
-    });
-    res.send({a:1});
+    })
+    .then(v => {
+      res.send(v);
+    })
+    .catch(ex => {
+      res.send(ex.message);
+    })
+    // res.send({a:1});
     // throw new Error(req.body)
   });
 
